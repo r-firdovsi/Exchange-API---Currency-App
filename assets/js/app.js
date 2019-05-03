@@ -11,11 +11,13 @@ amountElement.addEventListener("input", exchangeCurrency);
 firstSelect.onchange = function() {
     currency.changeFirstCurrency(firstSelect.options[firstSelect.selectedIndex].textContent);
     ui.changeFirst();
+    exchangeCurrency();
 };
 
 secondSelect.onchange = function() {
     currency.changeSecondCurrency(secondSelect.options[secondSelect.selectedIndex].textContent);
     ui.changeSecond();
+    exchangeCurrency();
 };
 
 
